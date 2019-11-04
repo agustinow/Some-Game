@@ -177,6 +177,20 @@
             "value": "1",
             "varName": "max_jumps",
             "varType": 0
+        },
+        {
+            "id": "c9da9ede-3e63-4e52-a50a-f3e2a0214d49",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "inmortality_ticks",
+            "varType": 1
         }
     ],
     "solid": false,

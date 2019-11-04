@@ -1,18 +1,8 @@
 /// @description Step
 // You can write your code in this editor
 
-//COLLISION VARIABLES
-//var top_collision = (collision_line(x, y-1, x+sprite_width, y-1, obj_map01, false, false))
-//var bottom_collision = (collision_line(x, y+sprite_height+1, x+sprite_width, y+sprite_height+1, obj_map01, false, false))
-//var right_collision = (collision_line(x+sprite_width+1, y, x+sprite_width+1, y+sprite_height, obj_map01, false, false))
-//var left_collision = (collision_line(x-1, y, x-1, y+sprite_height, obj_map01, false, false))
-
-//var top_acc_collision = (collision_line(x, y+yspeed, x+sprite_width, y+yspeed, obj_map01, false, false))
-//var bottom_acc_collision = (collision_line(x, y+sprite_height+yspeed, x+sprite_width, y+sprite_height+yspeed, obj_map01, false, false))
-//var right_acc_collision = (collision_line(x+sprite_width+xspeed, y, x+sprite_width+xspeed, y+sprite_height, obj_map01, false, false))
-//var left_acc_collision = (collision_line(x+xspeed, y, x+xspeed, y+sprite_height, obj_map01, false, false))
-
-//CHECK IF IN GROUND
+//INMORTALITY TICKS DECREASED
+if(inmortality_ticks > 0) inmortality_ticks--
 
 keyDown = keyboard_check(ord("S"))
 keyRight = keyboard_check(ord("D"))
@@ -21,9 +11,50 @@ keyPressedUp = keyboard_check_pressed(ord("W"))
 keyPressedSpace = keyboard_check_pressed(vk_space)
 keyPressedDown = keyboard_check_direct(ord("S"))
 
+
+if(keyDown && hadouken == 0){
+	hadouken = 1
+	alarm_set(1, 10)
+}
+else if((keyRight || keyLeft) && hadouken == 1){
+	hadouken = 2
+	alarm_set(1, 10)
+}
+
+if(keyPressedSpace && state != STATE.HADOUKEN){
+	if(hadouken < 2) state = STATE.ATTACK
+	else if(mana > 75)state = STATE.HADOUKEN
+}
+
 switch (state){
 	case STATE.FREE: PlayerStepFree(); break;
-	case STATE.ATTACK: PlayerStepAttack(); break;
-	case STATE.COMBO: PlayerStepCombo(); break;
+	case STATE.ATTACK: {
+		switch (combo){
+			case 0: {
+				//FIRST ATTACK
+				PlayerStepAttack()
+				break
+			}
+			case 1: {
+				//SECOND ATTACK
+				PlayerStepAttack()
+				break
+			}
+			case 2: {
+				//THIRD ATTACK
+
+				break
+			}
+			default: {
+				//BUG CATCH
+				break
+			}
+		}
+		break
+	}
+	case STATE.HADOUKEN: {
+		PlayerStepHadouken()
+		break;
+	}
 	default: PlayerStepFree(); break;
 }

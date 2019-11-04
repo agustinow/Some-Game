@@ -1,6 +1,8 @@
 //ATTACK START
 
 if(sprite_index != spr_chest_atk_normal){
+	alarm_set(0, 30)
+	combo += 1
 	sprite_index = spr_chest_atk_normal
 	image_index = 0
 	var variation
@@ -11,7 +13,9 @@ if(sprite_index != spr_chest_atk_normal){
 		other.weapon_id = id
 	}
 } else {
-	if(!instance_exists(weapon_id)) state = STATE.FREE;
+	if(!instance_exists(weapon_id)){
+		state = STATE.FREE;
+	}
 }
 
 PlayerStepFree()

@@ -1,0 +1,1 @@
+instance_create_layer(random_range(400, 1800), 784, layer, obj_std_enemy)

@@ -47,11 +47,35 @@
             }
         },
         {
+            "Key": "1fed4acf-07fd-4853-9fb2-73c418c09be2",
+            "Value": {
+                "id": "da48d4b9-eb52-4a3a-9694-8cdf5fdd44f5",
+                "resourcePath": "sprites\/spr_chest_hadouken\/spr_chest_hadouken.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "28616b4d-1d9f-4b32-8bde-d53b4579492c",
             "Value": {
                 "id": "77b70add-f919-480c-9190-658a6bde2a09",
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2d297810-0c27-4297-80e3-888609913e46",
+            "Value": {
+                "id": "ae2778d1-580d-4ad4-8ea6-46f3a39a3af2",
+                "resourcePath": "scripts\/AddEnemy\/AddEnemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2e3c131c-5785-4bbb-a8fb-b2de244d9ac3",
+            "Value": {
+                "id": "3c1366b7-0555-4ac6-8c55-1f8a335a97bd",
+                "resourcePath": "scripts\/PlayerStepHadouken\/PlayerStepHadouken.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -143,6 +167,14 @@
             }
         },
         {
+            "Key": "5f9b6367-8913-4fa6-9d56-1d65926cffb1",
+            "Value": {
+                "id": "b8293de3-7267-44da-9a64-2f78a25dd918",
+                "resourcePath": "objects\/obj_hadouken\/obj_hadouken.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6469853b-07f0-4166-a113-1109e8b04c22",
             "Value": {
                 "id": "0ba1adb1-bfb6-4bb8-966c-71d27c07d8d5",
@@ -156,14 +188,6 @@
                 "id": "5c2dc214-67d6-4fbe-9f3d-17df1c9d438f",
                 "resourcePath": "objects\/obj_attack\/obj_attack.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "77c7eb59-c46c-4895-9b3b-382a642fc390",
-            "Value": {
-                "id": "60216f97-3af1-48c9-8f43-2ae5df46846e",
-                "resourcePath": "sprites\/sprite2\/sprite2.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -223,6 +247,22 @@
             }
         },
         {
+            "Key": "82c811c9-797a-41bb-9165-102faed2b6b1",
+            "Value": {
+                "id": "79d1ca71-8a7f-425c-a4e9-bc9da66d485e",
+                "resourcePath": "sprites\/spr_background\/spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "863eb1b3-fd1e-4eeb-b3db-04f63eb6510c",
+            "Value": {
+                "id": "492f43ae-0748-442c-89f1-48d040174a7d",
+                "resourcePath": "sprites\/spr_hadouken\/spr_hadouken.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8979b3c4-a564-47d7-a87f-73221f0e07dd",
             "Value": {
                 "id": "f60b661b-ab53-40e3-9102-78cd13a5fdb1",
@@ -276,6 +316,22 @@
                 "id": "e6d62a4a-a76a-471d-a007-6e420e34cc68",
                 "resourcePath": "sprites\/spr_chest_walking\/spr_chest_walking.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9b0308ad-5f03-4dea-bcba-2ab5df3a7eed",
+            "Value": {
+                "id": "c4d6f9ae-3ca4-4745-936b-c14e587eea77",
+                "resourcePath": "scripts\/TakeDamage\/TakeDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9eee32e5-8ad0-421c-b5d2-9b3e858c864c",
+            "Value": {
+                "id": "b786d4e0-2f93-4d3d-a2a9-74d2f7805552",
+                "resourcePath": "objects\/obj_projectile_parent\/obj_projectile_parent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -407,6 +463,14 @@
             }
         },
         {
+            "Key": "fe65d93f-7741-4200-901b-ffeb585157b3",
+            "Value": {
+                "id": "74c175fc-3ae5-45e2-8fae-80240002d829",
+                "resourcePath": "scripts\/AddPj\/AddPj.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff276a6a-829a-48be-852f-b22783169a5b",
             "Value": {
                 "id": "08570bd3-b5b0-4a8b-a6a2-063579955aa0",
@@ -421,7 +485,11 @@
         "ae785b49-56de-44b0-9f5c-333c89da3079",
         "81141862-d665-47e8-93cd-fd2cca7ba8b7",
         "78142f65-cc36-41d4-98de-71d6314e6d6d",
-        "5882c304-4a7b-4525-a082-767d43202a9f"
+        "5882c304-4a7b-4525-a082-767d43202a9f",
+        "9b0308ad-5f03-4dea-bcba-2ab5df3a7eed",
+        "2e3c131c-5785-4bbb-a8fb-b2de244d9ac3",
+        "2d297810-0c27-4297-80e3-888609913e46",
+        "fe65d93f-7741-4200-901b-ffeb585157b3"
     ],
     "tutorial": "com.YoYoGames.MyFirstGameCode"
 }

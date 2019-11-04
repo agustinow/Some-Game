@@ -6,6 +6,20 @@ DoPhysics()
 if(hp <= 0) instance_destroy()
 
 if(!on_air){
+	var player_dir = point_direction(x, y, obj_chest.x, obj_chest.y)
+	if(player_dir < 90 || player_dir > 270){
+		// Player is right.
+		image_xscale = -1
+		xspeed = 5
+	}
+	else if(player_dir > 90 && player_dir < 270){
+		// Player is left.
+		image_xscale = 1
+		xspeed = -5
+	} else {
+		xspeed = 0
+	}
+	
 	if(abs(obj_chest.x-x) > sprite_width){
 		if(sprite_index == spr_badbox_air){
 			sprite_index = spr_badbox_ground
@@ -14,23 +28,13 @@ if(!on_air){
 		} else if(image_index > 4){
 			sprite_index = spr_badbox_air
 			jump_count = max_jumps
-			var player_dir = point_direction(x, y, obj_chest.x, obj_chest.y)
-			if(player_dir < 90 || player_dir > 270){
-			    // Player is right.
-				xspeed = 5
-				DoJump()
-			}
-			else if(player_dir > 90 && player_dir < 270){
-			    // Player is left.
-				xspeed = -5
-				DoJump()
-			} else {
-				xspeed = 0
-			}
+			jump_power = random_range(jump_power_base-jump_power_threshold, jump_power_base+jump_power_threshold)
+			DoJump()
 		} else {
 			xspeed = 0
 		}
 	} else {
+		xspeed = 0
 		sprite_index = spr_badbox_ground
 		image_index = 0
 	}

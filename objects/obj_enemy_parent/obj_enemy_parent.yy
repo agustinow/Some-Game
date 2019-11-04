@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "6469853b-07f0-4166-a113-1109e8b04c22"
+        },
+        {
+            "id": "d34cad89-f68e-4bdc-b614-8becbd9c94b9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "6469853b-07f0-4166-a113-1109e8b04c22"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -67,6 +77,34 @@
             "resourceFilter": 1023,
             "value": "100",
             "varName": "max_hp",
+            "varType": 1
+        },
+        {
+            "id": "18bd2040-d31a-492e-bf15-77c53b4ee536",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "touch_damage",
+            "varType": 1
+        },
+        {
+            "id": "b0822d69-2c1e-42e4-9e87-7efda9dfa8f1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "touch_knockback",
             "varType": 1
         }
     ],

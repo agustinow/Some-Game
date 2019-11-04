@@ -13,7 +13,11 @@ if(instance_exists(owner)){
 			if(ds_list_find_index(hit_by_attack, hitID) == -1){
 				ds_list_add(hit_by_attack, hitID)
 				with(hitID){
-					EnemyHit(other.damage, other.knockback*other.image_xscale)
+					var side
+					if(other.x < x) side = 1
+					else if (other.x > x) side = -1
+					else side = 0
+					EnemyHit(other.damage, other.knockback*side)
 				}
 			}
 		}
