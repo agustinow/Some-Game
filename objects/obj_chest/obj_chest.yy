@@ -123,6 +123,16 @@
             "enumb": 1,
             "eventtype": 3,
             "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
+        },
+        {
+            "id": "cbd378a4-0fac-43d8-b5c5-aa69925c66a1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 2,
+            "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -336,6 +346,34 @@
             "resourceFilter": 1023,
             "value": "1",
             "varName": "mana_regen",
+            "varType": 1
+        },
+        {
+            "id": "74eb1a7d-3fa6-46b8-96b0-7fd02275f945",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "is_rotating",
+            "varType": 3
+        },
+        {
+            "id": "7df83779-2e38-4462-837e-b81c04b09d1a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "windwall",
             "varType": 1
         }
     ],

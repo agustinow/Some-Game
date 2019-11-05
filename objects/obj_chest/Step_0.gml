@@ -6,24 +6,49 @@ if(inmortality_ticks > 0) inmortality_ticks--
 
 keyDown = keyboard_check(ord("S"))
 keyRight = keyboard_check(ord("D"))
+keyPressedRight = keyboard_check_pressed(ord("D"))
+keyPressedLeft = keyboard_check_pressed(ord("A"))
 keyLeft = keyboard_check(ord("A"))
 keyPressedUp = keyboard_check_pressed(ord("W"))
 keyPressedSpace = keyboard_check_pressed(vk_space)
-keyPressedDown = keyboard_check_direct(ord("S"))
+keyPressedDown = keyboard_check_pressed(ord("S"))
 
 
-if(keyDown && hadouken == 0){
+if(keyPressedDown && hadouken == 0){
 	hadouken = 1
 	alarm_set(1, 10)
 }
-else if((keyRight || keyLeft) && hadouken == 1){
+else if((keyPressedRight || keyPressedLeft) && hadouken == 1){
 	hadouken = 2
 	alarm_set(1, 10)
 }
 
-if(keyPressedSpace && state != STATE.HADOUKEN){
-	if(hadouken < 2) state = STATE.ATTACK
-	else if(mana > 75)state = STATE.HADOUKEN
+if((keyPressedRight || keyPressedLeft) && windwall == 0){
+	if(keyRight) windwall = 1
+	else windwall = -1
+	alarm_set(2, 10)
+}
+else if(keyPressedLeft && windwall == 1){
+	windwall = 2
+	alarm_set(2, 15)
+}
+else if(keyPressedRight && windwall == -1){
+	windwall = -2
+	alarm_set(2, 15)
+}
+else if(keyPressedRight && windwall == 2){
+	windwall = 3
+	alarm_set(2, 20)
+}
+else if(keyPressedLeft && windwall == -2){
+	windwall = -3
+	alarm_set(2, 20)
+}
+
+if(keyPressedSpace && state != STATE.HADOUKEN && state != STATE.WINDWALL && !is_rotating){
+	if(hadouken < 2 && abs(windwall) < 3) state = STATE.ATTACK
+	else if(mana > 75 && hadouken == 2) state = STATE.HADOUKEN
+	else if(mana > 80 && abs(windwall) == 3) state = STATE.WINDWALL
 }
 
 switch (state){
@@ -54,6 +79,10 @@ switch (state){
 	}
 	case STATE.HADOUKEN: {
 		PlayerStepHadouken()
+		break;
+	}
+	case STATE.WINDWALL: {
+		PlayerStepWindwall()
 		break;
 	}
 	default: PlayerStepFree(); break;

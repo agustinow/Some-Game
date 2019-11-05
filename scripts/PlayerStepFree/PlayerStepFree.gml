@@ -11,6 +11,24 @@ if ( (keyRight && !keyLeft) || (!keyRight && keyLeft) ){
 }
 
 DoPhysics()
+	if(is_rotating){
+		if(image_angle < 0){
+			if(image_angle < -359){
+				is_rotating = false
+				image_angle = 0
+			} else {
+				image_angle -= 12
+			}
+		}
+		else{
+			if(image_angle > 359){
+				is_rotating = false
+				image_angle = 0
+			} else {
+				image_angle += 12
+			}
+		}
+	}
 
 //USER INPUT
 if(keyPressedUp){

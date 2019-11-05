@@ -1,6 +1,7 @@
 if(sprite_index != spr_chest_hadouken){
 	mana -= 75
 	sprite_index = spr_chest_hadouken
+	alarm_set(1, -1)
 	
 } else if(image_index > 2) {
 	//DO COMBO
