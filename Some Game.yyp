@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "3a2dbd66-9fbf-4bf2-a6d8-f07d186d6be2",
+            "Value": {
+                "id": "45814b2f-7a9c-4bc0-a512-31d64d496c2e",
+                "resourcePath": "scripts\/PlayerStepAttack2\/PlayerStepAttack2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3e08e055-d80c-48dc-9c4a-4b4b4ca8d63f",
             "Value": {
                 "id": "372f837c-5e03-40b1-b118-770add0cd746",
@@ -175,6 +183,22 @@
             }
         },
         {
+            "Key": "4d50d628-f7e0-4bc4-aa32-22257440aa3a",
+            "Value": {
+                "id": "407811f9-c7f2-4aee-a862-42dcd33d5162",
+                "resourcePath": "sprites\/spr_chest_armsup2\/spr_chest_armsup2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "522b765b-e81a-4077-8d76-2f56b6bfb329",
+            "Value": {
+                "id": "a3a3e0aa-fd53-4219-887d-45d42ab70c35",
+                "resourcePath": "scripts\/SetTwoPlayers\/SetTwoPlayers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "56e1b9e2-c8ff-45fe-a4eb-b20c7019e923",
             "Value": {
                 "id": "281a1f30-8fb7-4a6c-b9f3-4ba88e3103f7",
@@ -215,6 +239,14 @@
             }
         },
         {
+            "Key": "5e186e04-4e11-4f1d-8e18-4fcf71e8dd1f",
+            "Value": {
+                "id": "4fce59d6-65b7-4b7e-b5dd-45ac6aaf12f8",
+                "resourcePath": "sprites\/spr_chest_walking\/spr_chest_walking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5f9b6367-8913-4fa6-9d56-1d65926cffb1",
             "Value": {
                 "id": "b8293de3-7267-44da-9a64-2f78a25dd918",
@@ -244,6 +276,14 @@
                 "id": "3db3e742-f876-4a5f-bebf-984f81ab5ba5",
                 "resourcePath": "objects\/obj_super_enemy\/obj_super_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "664e1c9d-32ff-47fb-9904-dbfc7cca5166",
+            "Value": {
+                "id": "8e6e8c18-6289-421c-844b-701f0a568628",
+                "resourcePath": "sprites\/spr_chest_hadouken2\/spr_chest_hadouken2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -367,6 +407,14 @@
             }
         },
         {
+            "Key": "90ed3d0b-fc26-40d7-a461-825aab5326b5",
+            "Value": {
+                "id": "a9f7a95a-fdd2-4131-895e-e04d89e4aab2",
+                "resourcePath": "objects\/obj_chest_2\/obj_chest_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9234a84e-6946-46f3-bf15-4e83f0f809f1",
             "Value": {
                 "id": "7fd47f41-3d35-4e86-9a3a-5bd148e65841",
@@ -426,7 +474,7 @@
             "Key": "999b1dd3-6c67-492c-b832-d41a823681c9",
             "Value": {
                 "id": "e6d62a4a-a76a-471d-a007-6e420e34cc68",
-                "resourcePath": "sprites\/spr_chest_walking\/spr_chest_walking.yy",
+                "resourcePath": "sprites\/spr_chest_walking_old\/spr_chest_walking_old.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -435,6 +483,14 @@
             "Value": {
                 "id": "c4d6f9ae-3ca4-4745-936b-c14e587eea77",
                 "resourcePath": "scripts\/TakeDamage\/TakeDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9ce406d2-20ba-4c31-8cb5-401763cfde9e",
+            "Value": {
+                "id": "eceabaed-44ed-4413-8c27-3fe608d2bbaf",
+                "resourcePath": "scripts\/PlayerStepWindwall2\/PlayerStepWindwall2.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -455,10 +511,26 @@
             }
         },
         {
+            "Key": "ab86d8b1-0cab-4f4a-adf9-7f5070332847",
+            "Value": {
+                "id": "c198e643-0044-47ff-9cfb-27efa9f11813",
+                "resourcePath": "scripts\/TakeDamage2\/TakeDamage2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ae785b49-56de-44b0-9f5c-333c89da3079",
             "Value": {
                 "id": "15ff98a6-a5a5-431d-98b7-1cb891ea776c",
                 "resourcePath": "scripts\/PlayerStepCombo\/PlayerStepCombo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b5743e27-5698-40f0-a08c-ba4f69766db9",
+            "Value": {
+                "id": "3c814e52-1e4f-4a9e-ad5a-a023e4d46c7b",
+                "resourcePath": "scripts\/PlayerStepCombo2\/PlayerStepCombo2.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -476,6 +548,22 @@
                 "id": "50bde2c7-ff6b-4a91-a3c6-4e20a347ce62",
                 "resourcePath": "views\/ba8380ad-bd91-4973-8154-dea56cee2379.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "baf8a7fc-d617-4645-9f18-1a7e2e953334",
+            "Value": {
+                "id": "914b907a-877f-488b-93d1-ec497a6f9ec4",
+                "resourcePath": "scripts\/PlayerStepHadouken2\/PlayerStepHadouken2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bbfc1715-ef93-4e3a-8245-b38d8775a8a1",
+            "Value": {
+                "id": "0fefc443-bb41-459c-b9af-6d3b530b41b7",
+                "resourcePath": "sprites\/spr_chest_normal2\/spr_chest_normal2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,6 +591,14 @@
             }
         },
         {
+            "Key": "d6281aff-29f0-441f-89d1-18f3e805af38",
+            "Value": {
+                "id": "193d7b26-d20e-437b-962d-8f82bfcf7a1b",
+                "resourcePath": "sprites\/spr_chest_windwall2\/spr_chest_windwall2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d92a9789-21a7-4387-8748-8b98af386e8b",
             "Value": {
                 "id": "803784dd-54d2-4969-89ea-f7700a6a98df",
@@ -515,6 +611,14 @@
             "Value": {
                 "id": "3516fe25-32ad-452d-81a9-21f1541350df",
                 "resourcePath": "scripts\/BackgroundStep\/BackgroundStep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e2a209ea-630c-4fb7-bb0d-ffa4fc26e1ca",
+            "Value": {
+                "id": "6d95208a-bf4e-4fa9-b462-4362b2ac23d5",
+                "resourcePath": "scripts\/PlayerStepFree2\/PlayerStepFree2.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -532,6 +636,14 @@
                 "id": "b1e521b1-20b1-4854-bf31-8828d78f812f",
                 "resourcePath": "views\/e49aad6a-dd02-4ab4-9da5-d40aff685d62.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e67cf622-47a8-4f38-a08e-84c5b6a0ff47",
+            "Value": {
+                "id": "d9979010-f79a-4400-ac50-95097532b636",
+                "resourcePath": "sprites\/spr_chest_walking2\/spr_chest_walking2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -607,6 +719,14 @@
             }
         },
         {
+            "Key": "f78c97b4-ba5c-44c8-a77f-3583375b324b",
+            "Value": {
+                "id": "1de89d2a-0f13-429d-b9eb-a9722fc66d05",
+                "resourcePath": "sprites\/spr_chest_atk_normal2\/spr_chest_atk_normal2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fe65d93f-7741-4200-901b-ffeb585157b3",
             "Value": {
                 "id": "74c175fc-3ae5-45e2-8fae-80240002d829",
@@ -625,20 +745,27 @@
     ],
     "script_order": [
         "984d6cc8-02b4-4e98-a520-bce9ef9ff292",
+        "e2a209ea-630c-4fb7-bb0d-ffa4fc26e1ca",
         "7c712211-ffb2-4dca-b0f7-20168414939c",
+        "3a2dbd66-9fbf-4bf2-a6d8-f07d186d6be2",
         "ae785b49-56de-44b0-9f5c-333c89da3079",
+        "b5743e27-5698-40f0-a08c-ba4f69766db9",
         "81141862-d665-47e8-93cd-fd2cca7ba8b7",
         "78142f65-cc36-41d4-98de-71d6314e6d6d",
         "5882c304-4a7b-4525-a082-767d43202a9f",
         "9b0308ad-5f03-4dea-bcba-2ab5df3a7eed",
+        "ab86d8b1-0cab-4f4a-adf9-7f5070332847",
         "2e3c131c-5785-4bbb-a8fb-b2de244d9ac3",
+        "baf8a7fc-d617-4645-9f18-1a7e2e953334",
         "2d297810-0c27-4297-80e3-888609913e46",
         "fe65d93f-7741-4200-901b-ffeb585157b3",
         "846e7286-d759-402e-bcd5-4fecf6bcf8dc",
         "46a68d1e-bcb0-4b64-86f5-588bd3069686",
         "e143765a-0258-429e-8206-ec484f56ae52",
         "7196c932-7a3d-4bd5-b6c6-fc671f98047f",
-        "63e3599d-358e-4c69-bcdc-4df06f2ac08f"
+        "63e3599d-358e-4c69-bcdc-4df06f2ac08f",
+        "9ce406d2-20ba-4c31-8cb5-401763cfde9e",
+        "522b765b-e81a-4077-8d76-2f56b6bfb329"
     ],
     "tutorial": "com.YoYoGames.MyFirstGameCode"
 }
