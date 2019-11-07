@@ -7,5 +7,10 @@ if (jump_count == max_jumps){
 	
 	if(image_xscale > 0) image_angle = -1
 	else image_angle = 1
+	
+	if(state == STATE.ATTACK){
+		instance_destroy(weapon_id)
+		state = STATE.FREE
+	}
 	is_rotating = true
 }
