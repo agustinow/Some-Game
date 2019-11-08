@@ -133,6 +133,16 @@
             "enumb": 2,
             "eventtype": 2,
             "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
+        },
+        {
+            "id": "d6f7e643-9093-4feb-9967-d91624002e61",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -374,6 +384,48 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "windwall",
+            "varType": 1
+        },
+        {
+            "id": "2cddbd09-a414-4336-a69e-b178d43e0574",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "time_stand",
+            "varType": 1
+        },
+        {
+            "id": "2bbeff5a-68f6-451c-bb27-56e318a316da",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "estasis",
+            "varType": 1
+        },
+        {
+            "id": "3b4ab511-9f77-4114-beb7-f63c66f99a58",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "last_skill",
             "varType": 1
         }
     ],

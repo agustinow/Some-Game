@@ -13,46 +13,10 @@ keyPressedRight = keyboard_check_pressed(vk_right)
 keyPressedLeft = keyboard_check_pressed(vk_left)
 keyLeft = keyboard_check(vk_left)
 keyPressedUp = keyboard_check_pressed(vk_up)
-keyPressedSpace = keyboard_check_pressed(vk_rcontrol)
+keyPressedSpace = keyboard_check_pressed(vk_rshift)
 keyPressedDown = keyboard_check_pressed(vk_down)
 
-
-if(keyPressedDown && hadouken == 0){
-	hadouken = 1
-	alarm_set(1, 10)
-}
-else if((keyPressedRight || keyPressedLeft) && hadouken == 1){
-	hadouken = 2
-	alarm_set(1, 10)
-}
-
-if((keyPressedRight || keyPressedLeft) && windwall == 0){
-	if(keyRight) windwall = 1
-	else windwall = -1
-	alarm_set(2, 10)
-}
-else if(keyPressedLeft && windwall == 1){
-	windwall = 2
-	alarm_set(2, 15)
-}
-else if(keyPressedRight && windwall == -1){
-	windwall = -2
-	alarm_set(2, 15)
-}
-else if(keyPressedRight && windwall == 2){
-	windwall = 3
-	alarm_set(2, 20)
-}
-else if(keyPressedLeft && windwall == -2){
-	windwall = -3
-	alarm_set(2, 20)
-}
-
-if(keyPressedSpace && state != STATE.HADOUKEN && state != STATE.WINDWALL && !is_rotating){
-	if(hadouken < 2 && abs(windwall) < 3) state = STATE.ATTACK
-	else if(mana > 75 && hadouken == 2) state = STATE.HADOUKEN
-	else if(mana > 80 && abs(windwall) == 3) state = STATE.WINDWALL
-}
+PlayerStepCheckCombos()
 
 switch (state){
 	case STATE.FREE: PlayerStepFree2(); break;
@@ -70,11 +34,12 @@ switch (state){
 			}
 			case 2: {
 				//THIRD ATTACK
-
+				PlayerStepAttack2()
 				break
 			}
 			default: {
 				//BUG CATCH
+				PlayerStepAttack2()
 				break
 			}
 		}
@@ -82,11 +47,15 @@ switch (state){
 	}
 	case STATE.HADOUKEN: {
 		PlayerStepHadouken2()
-		break;
+		break
 	}
 	case STATE.WINDWALL: {
 		PlayerStepWindwall2()
-		break;
+		break
+	}
+	case STATE.ESTASIS: {
+		PlayerStepEstasis2()
+		break
 	}
 	default: PlayerStepFree2(); break;
 }

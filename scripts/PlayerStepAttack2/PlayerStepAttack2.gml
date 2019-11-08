@@ -8,7 +8,7 @@ if(sprite_index != spr_chest_atk_normal2){
 	var variation
 	if(sprite_width < 0) variation = -1
 	else variation = 1
-	with(instance_create_layer(x+sprite_width/2+variation, y, layer, obj_attack)){
+	with(instance_create_layer(x+sprite_width/2+variation, y, layer, obj_attack2)){
 		owner = other.id
 		other.weapon_id = id
 	}

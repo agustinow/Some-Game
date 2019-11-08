@@ -40,9 +40,20 @@ if(keyPressedUp){
 if(state == STATE.FREE){
 	if(on_air) sprite_index = spr_chest_armsup2
 	else{
-		if(xspeed == 0) sprite_index = spr_chest_normal2
+		if(xspeed == 0){
+			time_stand++
+			if(time_stand < 40 && time_stand > 0){
+				//NOT YET
+				sprite_index = spr_chest_walking_stand2
+				
+			} else if(time_stand >= 40){
+				//NOW
+				sprite_index = spr_chest_normal2
+			}
+		}
 		else{
 			sprite_index = spr_chest_walking2
+			time_stand = 0
 		}
 	}
 }

@@ -8,7 +8,7 @@ if(sprite_index != spr_chest_hadouken2){
 	var variation
 	if(sprite_width < 0) variation = -1
 	else variation = 1
-	with(instance_create_layer(x+sprite_width/2+variation, y, layer, obj_hadouken)){
+	with(instance_create_layer(x+sprite_width/2+variation, y, layer, obj_hadouken2)){
 		owner = other.id
 		xspeed *= other.image_xscale
 	}
