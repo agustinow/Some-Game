@@ -153,6 +153,16 @@
             "enumb": 0,
             "eventtype": 7,
             "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
+        },
+        {
+            "id": "fc2b1834-ace7-4e71-9500-4620a8d3772b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 2,
+            "m_owner": "f102b65f-3581-46c5-88d7-be3a37de900e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -196,6 +206,14 @@
             "objectId": "4486b914-e8b2-4ca4-8a7c-fc8b5ffb1b13",
             "propertyId": "a20edd45-1715-42fe-b8b9-b81650fbec85",
             "value": "10"
+        },
+        {
+            "id": "e9cfd685-7fa5-4f9c-8dfe-8ef882fdf19b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e64e9568-949a-4fe8-99f4-ab0fe044d83f",
+            "propertyId": "97e4f272-81c0-4238-9a97-8a119c06c353",
+            "value": "200"
         }
     ],
     "parentObjectId": "4486b914-e8b2-4ca4-8a7c-fc8b5ffb1b13",
@@ -282,20 +300,6 @@
             "resourceFilter": 1023,
             "value": "200",
             "varName": "hp",
-            "varType": 0
-        },
-        {
-            "id": "a48cb137-90a7-4f36-b449-26802c52d406",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "200",
-            "varName": "max_hp",
             "varType": 0
         },
         {
@@ -437,6 +441,20 @@
             "value": "0",
             "varName": "last_skill",
             "varType": 1
+        },
+        {
+            "id": "89a77355-f9b2-4f26-a223-d71151636a26",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "bomb_available",
+            "varType": 3
         }
     ],
     "solid": false,

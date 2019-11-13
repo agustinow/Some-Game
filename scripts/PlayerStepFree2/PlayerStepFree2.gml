@@ -36,6 +36,12 @@ if(keyPressedUp){
 	DoJump()
 }
 
+if(keyPressedQ && bomb_available){
+	ThrowBomb()
+	bomb_available = false
+	alarm_set(4, 200)
+}
+
 //SELECT PROPER SPRITE
 if(state == STATE.FREE){
 	if(on_air) sprite_index = spr_chest_armsup2

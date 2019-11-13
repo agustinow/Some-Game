@@ -15,6 +15,7 @@ keyLeft = keyboard_check(vk_left)
 keyPressedUp = keyboard_check_pressed(vk_up)
 keyPressedSpace = keyboard_check_pressed(vk_rshift)
 keyPressedDown = keyboard_check_pressed(vk_down)
+keyPressedQ = keyboard_check_pressed(vk_numpad0)
 
 PlayerStepCheckCombos()
 

@@ -34,6 +34,22 @@
             "objectId": "4486b914-e8b2-4ca4-8a7c-fc8b5ffb1b13",
             "propertyId": "e2cb013d-8126-4337-b89a-ea312eda0653",
             "value": "True"
+        },
+        {
+            "id": "62103848-5b09-4225-ba7c-1d5d6d5cc759",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e64e9568-949a-4fe8-99f4-ab0fe044d83f",
+            "propertyId": "97e4f272-81c0-4238-9a97-8a119c06c353",
+            "value": "100"
+        },
+        {
+            "id": "69988251-63bd-4296-b369-2574d0d99b00",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "e64e9568-949a-4fe8-99f4-ab0fe044d83f",
+            "propertyId": "559f1882-e0a6-47d4-9981-8c00b6183ba4",
+            "value": "100"
         }
     ],
     "parentObjectId": "4486b914-e8b2-4ca4-8a7c-fc8b5ffb1b13",
@@ -51,34 +67,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "1aab2e6f-d666-4eb2-9662-1c9bae65840f",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "hp",
-            "varType": 1
-        },
-        {
-            "id": "1e07aba5-ffa6-4986-a076-5828801acbb0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "100",
-            "varName": "max_hp",
-            "varType": 1
-        },
         {
             "id": "18bd2040-d31a-492e-bf15-77c53b4ee536",
             "modelName": "GMObjectProperty",

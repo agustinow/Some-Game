@@ -12,6 +12,7 @@ keyLeft = keyboard_check(ord("A"))
 keyPressedUp = keyboard_check_pressed(ord("W"))
 keyPressedSpace = keyboard_check_pressed(vk_space)
 keyPressedDown = keyboard_check_pressed(ord("S"))
+keyPressedQ = keyboard_check_pressed(ord("Q"))
 
 PlayerStepCheckCombos()
 

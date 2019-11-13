@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "79d99b1e-54c1-43fb-bb95-7aeaa70bc0fa",
+            "Value": {
+                "id": "bb15618e-42af-4d8c-a1ff-02832f33902a",
+                "resourcePath": "sprites\/spr_bomb_explosion\/spr_bomb_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a88ba17-0f5b-443d-84b3-d68f912f5b7d",
             "Value": {
                 "id": "369b5f47-987a-482c-bfa8-444615127f7f",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "9dbd6c20-134c-40a3-8b9d-eac35adc7848",
+            "Value": {
+                "id": "f71f9ff0-a165-4d4d-b189-ba5c68f0b046",
+                "resourcePath": "scripts\/ThrowBomb\/ThrowBomb.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9eee32e5-8ad0-421c-b5d2-9b3e858c864c",
             "Value": {
                 "id": "b786d4e0-2f93-4d3d-a2a9-74d2f7805552",
@@ -812,6 +828,14 @@
                 "id": "70a3dddf-8ddd-4ce6-bb69-b4da4c8b7ffc",
                 "resourcePath": "sprites\/spr_tiles1\/spr_tiles1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bfe8ccd6-91de-4fb0-b6c6-93a3a0032b6f",
+            "Value": {
+                "id": "514170c4-2713-47c2-bea6-6300ab6da446",
+                "resourcePath": "scripts\/ExplosionDamage\/ExplosionDamage.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -959,6 +983,14 @@
             }
         },
         {
+            "Key": "e64e9568-949a-4fe8-99f4-ab0fe044d83f",
+            "Value": {
+                "id": "897f046e-828d-4bde-a8ff-7c56f7946d33",
+                "resourcePath": "objects\/obj_damagable_entity_parent\/obj_damagable_entity_parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e67cf622-47a8-4f38-a08e-84c5b6a0ff47",
             "Value": {
                 "id": "d9979010-f79a-4400-ac50-95097532b636",
@@ -1039,6 +1071,14 @@
             }
         },
         {
+            "Key": "f2b999e4-dd47-4f4b-85f5-f89174496f14",
+            "Value": {
+                "id": "a1164eac-2d2f-47d0-b587-a394c8ac54d3",
+                "resourcePath": "objects\/obj_bomb\/obj_bomb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "543aa3a2-8d26-40c4-b2dd-37051de24546",
@@ -1059,6 +1099,22 @@
             "Value": {
                 "id": "ae8f3021-c175-47c6-ba61-83e970b348ca",
                 "resourcePath": "sprites\/spr_spike\/spr_spike.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f8732058-60e2-4be9-9641-919ffe53efb7",
+            "Value": {
+                "id": "ef2eaa51-bd7a-485e-b406-7ff45fe524d1",
+                "resourcePath": "objects\/obj_map_inv\/obj_map_inv.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fb76f207-05d8-4db9-b8d8-b0e9d40ddaa8",
+            "Value": {
+                "id": "19bdc55f-ab7d-47d4-89f5-ceed5d5a3098",
+                "resourcePath": "sprites\/spr_bomb\/spr_bomb.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1113,7 +1169,9 @@
         "9ce406d2-20ba-4c31-8cb5-401763cfde9e",
         "522b765b-e81a-4077-8d76-2f56b6bfb329",
         "1d7fd1f3-e8e9-42ca-b686-48b83dfbde06",
-        "0d681a08-9e5b-48f0-9c69-d4d00914ded6"
+        "0d681a08-9e5b-48f0-9c69-d4d00914ded6",
+        "9dbd6c20-134c-40a3-8b9d-eac35adc7848",
+        "bfe8ccd6-91de-4fb0-b6c6-93a3a0032b6f"
     ],
     "tutorial": "com.YoYoGames.MyFirstGameCode"
 }
