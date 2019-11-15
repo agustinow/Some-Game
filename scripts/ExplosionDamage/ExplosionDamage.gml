@@ -5,9 +5,7 @@ var num = collision_circle_list(x, y, explosion_range, obj_damagable_entity_pare
 if(num > 0){
 	for(var i = 0; i < num; i++){
 		with(hits[| i ]){
-			if(object_is_ancestor(object_index, obj_chest)){
-				TakeDamage()
-			} else EnemyHit(other.touch_damage, other.touch_knockback)
+			EnemyHit(other.touch_damage, other.touch_knockback)
 		}
 	}
 }

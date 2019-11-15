@@ -9,12 +9,12 @@ if(!on_air){
 	var player_dir = point_direction(x, y, obj_chest.x, obj_chest.y)
 	if(player_dir < 90 || player_dir > 270){
 		// Player is right.
-		image_xscale = -1
+		image_xscale = -normal_scale
 		xspeed = 5
 	}
 	else if(player_dir > 90 && player_dir < 270){
 		// Player is left.
-		image_xscale = 1
+		image_xscale = normal_scale
 		xspeed = -5
 	} else {
 		xspeed = 0
@@ -41,5 +41,5 @@ if(!on_air){
 }
 
 
-if(xspeed < 0) image_xscale = -1
-else if(xspeed > 0) image_xscale = 1
+if(xspeed < 0) image_xscale = -normal_scale
+else if(xspeed > 0) image_xscale = normal_scale
